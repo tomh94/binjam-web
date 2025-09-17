@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+ES:wght@100..400&display=swap');
+
+:root {
+    --primary-color: #0d2f3f;
+    --secondary-color: #4CAF50;
+    --background-color: #F8F7F1;
+    --text-color: #333333;
+    --font-family: 'Cabin', sans-serif;
+    --font-family-alt: 'Open Sans', sans-serif;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+    overflow-x: clip;
+    position: relative;
+    color: var(--primary-color);
+    background: var(--background-color);
+}
+
+/* Footer */
+
+.footer{
+    z-index: 99;
+    position: sticky;
+    top: 0px;
+    transition: all .3s ease;
+    padding: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    opacity: 1;
+    transform: none;
+    box-shadow: none;
+}
+
+.name{
+    grid-column: 1;
+    font-family: "Playwrite ES", cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+    width: 100%;
+    font-weight: 500;
+}
+
+.menu{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    list-style: none;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+
+.menu-to-split{
+    justify-self: center; /* zarovnání doprostřed */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    list-style: none;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+.phone{
+    display : flex;
+    align-items: center;
+    align-self: end;
+    gap: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.phone :hover{
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.phone svg {
+    color:var(--secondary-color);
+    width: 24px;
+    height: 24px;
+    box-sizing: content-box;
+    padding : 8px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.menu li a{
+    text-decoration: none;
+    color:var(--primary-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: var(--font-family-alt);
+    scroll-behavior: smooth;
+}
+
+.menu li a:hover{
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.menu a:hover::before {
+    content: '( ';
+    opacity: 1;
+}
+
+.menu a:hover::after {
+    content: ' )';
+    opacity: 1;
+}
+
+/* sekce home */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem 0;
+}
+
+.home-div {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0;
+    width: 90%;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-div-up-left{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    min-width : 300px;
+}
+
+.person{
+    grid-column: 2;
+    grid-row: 1 / 4;
+    max-width: 400px;
+    align-self: end;
+    justify-self: center;
+}
+
+.home-div-up-right{
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.email{
+    grid-column :1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+.home-div-down-left{
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.home-div-down-right{
+    grid-column: 3;
+    grid-row: 2/4;
+    align-self: center;
+    justify-self: center;
+}
+
+/* obecné*/
+
+.main-text{
+    font-size: 4rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.second-text{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
