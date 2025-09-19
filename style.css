@@ -111,6 +111,7 @@ html, body {
 .phone :hover{
     color: var(--secondary-color);
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .phone svg {
