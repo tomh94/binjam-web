@@ -52,6 +52,7 @@ html, body {
     opacity: 1;
     transform: none;
     box-shadow: none;
+    background:var(--background-color) ;
 }
 
 .name{
@@ -271,7 +272,7 @@ html, body {
 .help-left{
     display: flex;
     align-items: center;
-    border: #efeeee solid 2px;
+    border: #e4e2e2 solid 2px;
     border-radius: 25px;
     padding: 25px;
     width: 500px;
