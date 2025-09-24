@@ -410,7 +410,34 @@ html, body {
         }
     }
 
+/* latest sekce 4*/
 
+    #latest-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #latest-up{
+        display: flex;
+        justify-content: space-between;
+        margin: 70px;
+    }
+
+    #latest-img{
+        display: flex;
+        padding: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        img{
+            max-width: 330px;
+            padding-bottom: 50px;
+        }
+        #third{
+            max-width: 380px;
+            max-height: 330px;
+        }
+    }
 
 /* obecné*/
 
