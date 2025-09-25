@@ -51,8 +51,7 @@ html, body {
     padding-bottom: 2rem;
     opacity: 1;
     transform: none;
-    box-shadow: none;
-    background:var(--background-color) ;
+    background:var(--background-color);
 }
 
 .name{
@@ -262,7 +261,7 @@ html, body {
 /* help*/
  .help {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: white;
     padding: 5rem;
@@ -356,9 +355,10 @@ html, body {
     #experience-section{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         margin-bottom: 50px;
+        padding: 50px 150px 50px 150px;
     }
 
     h1{
@@ -370,7 +370,9 @@ html, body {
 
     #exp-main-container{
         display: flex;
-        justify-content: space-around;
+        max-width: 1300px;
+        justify-content: space-evenly;
+        
         img{
         max-width: 70px;
         min-width: 70px;
@@ -381,8 +383,9 @@ html, body {
     #exp-left-container{
         display: flex;
         flex-direction: column;
-        gap: 160px;
-        max-width: 500px;
+        justify-content: left;
+        gap: 150px;
+        padding-left: 100px;
         flex: 1;
         div{
             gap : 10px;
@@ -397,8 +400,8 @@ html, body {
         display: flex;
         flex: 1;
         flex-direction: column;
+        justify-content: right;
         gap: 80px;
-        max-width: 600px;
         padding-left: 20px;
         
             div{
@@ -417,6 +420,7 @@ html, body {
         display: flex;
         flex-direction: column;
         background: white;
+        padding: 0px 120px;
     }
 
     #latest-up{
@@ -453,11 +457,47 @@ html, body {
         }
     }
 
+/* about */
+
+    #about{   
+        background: var(--background-color); 
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        padding: 75px 120px;
+        
+    }
+    #card-container{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 75px;
+        }
+
+    .card{
+        max-width: 400px;
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 0px 20px 20px 20px;
+        align-items: space-between ;
+
+        img{
+            max-width: 50px;
+            margin-top: -25px;
+        }
+        .card-role{
+            padding-top: 10px;
+            margin-top: 10px;
+            border-top: rgba(86, 83, 83, 0.1) 2px solid;
+        }
+    }
 /* footer */
 
     #footer{
         background: white;
-        padding: 120px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 50px;
+        padding-bottom: 30px;
     }
     #ft-up{
         display: flex;
@@ -571,3 +611,5 @@ html, body {
     font-family: var(--font-family);
     font-weight: 400;
 }
+
+
