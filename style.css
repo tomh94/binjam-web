@@ -191,8 +191,7 @@ html, body {
 
 .person img{
     float: center;
-    width: 100%;
-    height: auto;
+    height: 800px;
 }
 
 .home-div-up-right{
@@ -359,6 +358,7 @@ html, body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 50px;
     }
 
     h1{
@@ -416,6 +416,7 @@ html, body {
     #latest-container{
         display: flex;
         flex-direction: column;
+        background: white;
     }
 
     #latest-up{
@@ -428,6 +429,10 @@ html, body {
             h2{
                 font-size: 2.5rem;
                 padding-bottom: 10px;
+            }
+            p{
+                font-size: 1.2rem;
+                color: var(--text-color);
             }
         }
     }
@@ -450,9 +455,84 @@ html, body {
 
 /* footer */
 
+    #footer{
+        background: white;
+        padding: 120px;
+    }
+    #ft-up{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        div{
+            font-size: 2rem;
+
+            .email{
+                font-size: 2.5rem;
+            }
+            h2{
+                margin-bottom: 3rem;
+            }
+            #addres{
+                font-size: 1.3rem;
+                font-weight: normal;
+            }
+            span{
+                font-weight: bold;
+                font-size: 2.5rem;
+            }
+            #info{
+                margin-bottom: 0rem;
+        }
+    }
+    }
+
+    #ft-down{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25px;
+        border-top: 2px solid #e4e2e2;
+
+        div{
+            font-size: 1.16rem;
+        }
+    }
+
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        font-size: 1rem;
+        list-style: none;
+        gap: 1.9rem;
+        margin-top: 2rem;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color:var(--primary-color);
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        a:hover{
+            color: var(--secondary-color);
+            transition: all 0.3s ease;
+        }
+        a:hover::before {
+            content: '( ';
+            opacity: 1;
+        }
+        a:hover::after {
+        content: ' )';
+        opacity: 1;
+        }
+    }
+
     #highlighted-text{
         color: rgb(71, 118, 184);
         font-weight: bold;
+        text-decoration: none;
     }
 
     #name-ft{
@@ -466,6 +546,7 @@ html, body {
         width: 2px;
         height: 30px; 
         color: #565353;
+        font-family: var(--font-family);
     }
     
 
