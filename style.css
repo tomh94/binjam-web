@@ -448,6 +448,26 @@ html, body {
         }
     }
 
+/* footer */
+
+    #highlighted-text{
+        color: rgb(71, 118, 184);
+        font-weight: bold;
+    }
+
+    #name-ft{
+        align-content: center;
+        font-family: "Marck Script", "Comic Sans MS", cursive;
+        font-size: 1.5rem;
+    }
+
+
+    #divider {
+        width: 2px;
+        height: 30px; 
+        color: #565353;
+    }
+    
 
 /* obecné*/
 
