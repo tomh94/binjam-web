@@ -464,7 +464,17 @@ html, body {
         flex-direction: column;
         text-align:center;
         padding: 75px 120px;
-        
+    }
+
+    #about-up{
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.3rem;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
     #card-container{
             display: flex;
@@ -474,10 +484,30 @@ html, body {
 
     .card{
         max-width: 400px;
+        max-height: 200px;
         background: #ffffff;
         border-radius: 20px;
         padding: 0px 20px 20px 20px;
-        align-items: space-between ;
+        align-items: center;
+
+        img{
+            max-width: 50px;
+            margin-top: -25px;
+        }
+        .card-role{
+            padding-top: 10px;
+            margin-top: 10px;
+            border-top: rgba(86, 83, 83, 0.1) 2px solid;
+        }
+    }
+
+    .card-picked{
+        max-width: 400px;
+        max-height: 200px;
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 0px 20px 20px 20px;
+        margin-top: -50px;
 
         img{
             max-width: 50px;
