@@ -27,18 +27,6 @@ html, body {
     color: var(--primary-color);
 }
 
-.main {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-family);
-    scroll-behavior: smooth;
-    overflow-x: clip;
-    position: relative;
-    color: var(--primary-color);
-    background: var(--background-color);
-}
-
 /* header */
 
 .header{
