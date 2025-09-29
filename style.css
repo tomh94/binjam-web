@@ -355,22 +355,25 @@ html, body {
         justify-content: space-evenly;
         
         img{
-        max-width: 70px;
-        min-width: 70px;
-        flex: 1;
-        }
+            max-width: 70px;
+            min-width: 70px;
+            max-height: 600px;
+            min-height: 600px;
+            flex: 1;
+            }
     }
 
     #exp-left-container{
         display: flex;
         flex-direction: column;
         justify-content: left;
-        gap: 150px;
         padding-left: 100px;
         flex: 1;
         div{
             gap : 10px;
-            display: flex;
+            max-height: 210px;
+            min-height:210px;
+            display: flex;;
             flex-direction: column;
         }
     }
@@ -382,12 +385,13 @@ html, body {
         flex: 1;
         flex-direction: column;
         justify-content: right;
-        gap: 80px;
         padding-left: 20px;
         
             div{
             display: flex;
                 gap: 10px;
+                max-height: 210px;
+                min-height:210px;
                 flex-direction: column;
             }
             p{
